@@ -1,3 +1,12 @@
+ This program aims at simplifying the download and extraction of zip files.
+
+ The initial use case is the frequent download and extraction of the same zip files form the same urls. It is a pain to do it by hand, for instance because some OS will rename the path of the extracted files if there is a previous version.
+
+ Without proper configuration, unzipping numerous times the same zip file will result in the creation of numerous directories. Sometimes, you will prefer to overwrite existing ones.
+ For instance, if you unzip a file named toto.zip and the directory "toto" already exists, your new data will ne extracted in "toto(1)" then "toto(2)" etc...
+
+ You will find below a quick explanation of the files you have to configure. Please note that by default it uses data from the french chess federation (our use case).
+
 [FILES]
 main.py         main program
 config.txt      configuration file (see below for format)        
