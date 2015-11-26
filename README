@@ -1,0 +1,33 @@
+[FILES]
+main.py         main program
+config.txt      configuration file (see below for format)        
+proxy(optional) proxy settings (see below for format)
+
+
+------------
+[config.txt]
+------------
+For each ZIPFILE you want to donwload, indicate its URL and the PATH it will be stored (cheminZIP). Indicate as well the PATH where it will be unzipped (cheminFILES).
+
+The format is:
+[ZIPFILE] NB: it is juste a name
+url: URL
+cheminZIP: PATH
+chemin: PATH
+
+
+------------
+[proxy]
+------------
+If tour connected through a proxy, this file must be created. The format is a python dictionary where the attributes are the protocols, and the values are the proxy url+ proxy port.
+
+If your proxy for http protocol is "proxy.toto.com" and the port is 666, the proxy file should contain these informations:
+
+{'http':'proxy.toto.com:666}
+
+If for the ftp protocol you have a proxy called proxy.titi.com and the port is 69, your proxy file will be like this:
+
+{'http' : 'proxy.toto.com:666', 'ftp' : 'proxy.titi.com:69'}
+
+
+

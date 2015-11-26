@@ -1,0 +1,9 @@
+[Base_blitz]
+url: http://www.echecs.asso.fr/Papi/Blitz.zip
+cheminZIP: ./
+cheminFILES: ./outputs/
+
+[FFE_70]
+url: http://www.echecs.asso.fr/papi/ffe70.zip
+cheminZIP: ./
+cheminFILES: ./outputs/
